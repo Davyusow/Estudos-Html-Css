@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em diversos dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+
+    <picture>
+        <!-- A ordem é do menor pro maior se estiver usando max-width -->
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="images/foto-m.png" type="image/png">
+        <!-- max-width Tamanho máximo, onde se for atingida, ele troca para essa imagem -->
+        <img src="images/foto-g.png" alt="Foto Flexível"> <!-- Imagem padrão a ser carregada -->
+
+    </picture>
+
+    <br>
+    <!-- <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-m.png" type="image/png">
+        <source media="(min-width: 1050px)" srcset="images/foto-g.png" type="image/png">
+        <img src="images/foto-p.png" alt="Foto Flexível">
+    </picture> -->
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+
+
+    <audio preload="metadata" autoplay controls loop>
+        <!-- Pode incluir diversas extensões de arquivo assim cocmo as imagens -->
+        <source src="sounds/Alien Sunset - Audionautix.mp3" type="audio/mpeg">
+        <source src="sounds/Alien Sunset - Audionautix.ogg" type="audio/ogg">
+        <source src="sounds/Alien Sunset - Audionautix.wav" type="audio/wav">
+        <!-- Evitar formato wav por conta do tamanho -->
+        <p>O seu navegador não suporta o audio deste site. <a href="sounds/Alien Sunset - Audionautix.mp3">Baixe aqui o
+                audio</a></p>
+    </audio>
+
+
+    <hr>
+    Créditos:
+
+    <p>
+        Alien Sunset de Audionautix é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons.
+        https://creativecommons.org/licenses/by/4.0/ <br>
+
+        Artista: http://audionautix.com/
+    </p>
+</body>
+
+
+
+</html>
