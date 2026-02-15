@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div > p {
+            /* os parágrafos dentro de uma div */
+            display: none; /* esconde, mostra nada */
+        }
+
+        div:hover > p {
+            /*Quando passar o mouse por cima de um div que tem um parágrafo dentro*/
+            display: block; /* mostra todo o conteúdo do bloco */
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+    <body>
+        <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobre o texto abaixo:</p>
+        <div>
+            Passe o mouse aqui.
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+    </body>
+</html>
